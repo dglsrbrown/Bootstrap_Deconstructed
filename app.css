@@ -1,6 +1,15 @@
+/* body{
+    margin: 0;
+    padding: 0;
+} */
+
 .col1{
     background: #5C7080;
 }
 .col2{
     background: #6BC0ff;
+}
+.wraper{
+    margin:0;
+    padding:0;
 }
