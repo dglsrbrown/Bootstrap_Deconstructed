@@ -1,8 +1,12 @@
 body{
     margin: 0;
     padding: 0;
+    color: rgb(89, 89, 89);
 }
-
+.hero{
+    color: rgb(235, 229, 244);
+    background-color: rgb(121, 82, 180);
+}
 .col1{
     background: #5C7080;
 }
