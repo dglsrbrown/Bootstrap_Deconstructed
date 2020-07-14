@@ -3,7 +3,7 @@ body{
     padding: 0;
     color: rgb(89, 89, 89);
 }
-.hero{
+.color-bstrap{
     color: rgb(235, 229, 244);
     background-color: rgb(121, 82, 180);
 }
@@ -16,4 +16,24 @@ body{
 .wraper{
     margin:0;
     padding:0;
+}
+
+footer {
+    height: 100px;
+}
+
+.bl{
+    color:rgb(69, 119, 226);
+}
+.rd{
+    color:rgb(216, 49, 56);
+}
+.gy{
+    color:gray;
+}
+.bk{
+    color:black;
+}
+pre{
+    color:rgb(69, 119, 226);
 }
