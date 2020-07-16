@@ -21,11 +21,11 @@
     <nav>
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a id="current" class="nav-link active" href="index.html">Home</a>
+                <a id="current" class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                    aria-expanded="false">Dropdown</a>
+                    aria-expanded="false">Pages</a>
                 <div class="dropdown-menu">
                     <a id="home" class="dropdown-item" href="index.html" onclick="currentPage()">Home</a>
                     <a id="grid" class="dropdown-item" href="grid.html" onclick="currentPage()">Grid</a>
@@ -36,17 +36,17 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="https://getbootstrap.com/docs/4.4/getting-started/introduction/" target="_blank">Docs</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
+            </li> -->
         </ul>
     </nav>
 
     <!-- Hero Intro -->
     <div class="color-bstrap jumbotron">
-        <div class="container">
+        <div class="container text-white">
             <h1 class="display-4">Bootstrap Deconstructed</h1>
             <p class="lead">A quick overview of the most important features of Bootstrap to get you up and running
             </p>
@@ -68,15 +68,10 @@
                 <li>Pre-built themes</li>
                 <li>Eliminate creating CSS from scratch</li>
             </ul>
-            <p>Bootstrap uses the class attribute html tags to apply styling just as you would do yourself by styling a
-                <a href="https://www.w3schools.com/cssref/sel_class.asp" target="_blank">CSS <em>.class</em>
+            <p>Bootstrap uses the class attribute in html tags to apply styling just as you would do yourself by styling
+                a
+                <a href="https://www.tutorialspoint.com/html-class-attribute" target="_blank">CSS <em>.class</em>
                     Selector</a>
-
-                <!-- <svg width=".5em" height=".5em" viewBox="0 0 16 16" class="bi bi-asterisk mb-2 ml-1 text-danger"
-                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
-                </svg> -->
                 <span class="popup" onclick="popUp()">
                     <svg width=".6em" height=".6em" viewBox="0 0 16 16"
                         class="bi bi-info-circle-fill mb-2 ml-1 text-danger" type="button" data-container="body"
@@ -86,7 +81,7 @@
                         <path fill-rule="evenodd"
                             d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
                     </svg>
-                    <span id="myPopup" class="popuptext">Pop Up</span></span>
+                    <span id="myPopup" class="popuptext">Confused? Please check the link.</span></span>
 
                 .</p>
     </div>
@@ -131,7 +126,7 @@
     </div>
     <!-- credits -->
     <footer class="color-bstrap row justify-content-center align-items-center mt-3">
-        <div class="col-md-6 text-center ">
+        <div class="col-md-6 text-center text-white">
             <p>Site by Douglas Brown</p>
         </div>
     </footer>

@@ -4,7 +4,7 @@ let page = path.split('/').pop();
 
 let tabDisplayName = document.querySelector("#current");
 function checkTab() {
-   
+
     switch (page) {
         case "index.html":
             tabDisplayName.innerHTML = "Home";
@@ -26,6 +26,5 @@ function checkTab() {
 // When the user clicks on popup, open the popup
 function popUp() {
     var popup = document.getElementById("myPopup");
-    console.log(popup.classList)
     popup.classList.toggle("show");
 }
