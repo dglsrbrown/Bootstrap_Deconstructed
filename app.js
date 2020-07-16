@@ -1,14 +1,31 @@
-console.log("Hello")
+/* Dynamic Tab */
 let path = window.location.pathname;
 let page = path.split('/').pop();
-console.log("Path = ", path);
-console.log("Page = ", page);
 
 let tabDisplayName = document.querySelector("#current");
-let activePage = "Home";
+function checkTab() {
+   
+    switch (page) {
+        case "index.html":
+            tabDisplayName.innerHTML = "Home";
+            break;
+        case "grid.html":
+            tabDisplayName.innerHTML = "Grid";
+            break;
+        case "dynamic.html":
+            tabDisplayName.innerHTML = "Dynamic Layouts";
+            break;
+        case "code.html":
+            tabDisplayName.innerHTML = "Code";
+            break;
 
-console.log(tabDisplayName.innerHTML);
+    }
+}
 
 
-
-// tabDisplayName.onload = currentPage();
+// When the user clicks on popup, open the popup
+function popUp() {
+    var popup = document.getElementById("myPopup");
+    console.log(popup.classList)
+    popup.classList.toggle("show");
+}

@@ -15,7 +15,7 @@
     <title>Bootstrap Deconstructed</title>
 </head>
 
-<body>
+<body onload="checkTab()">
 
     <!-- Navigation -->
     <nav>
@@ -56,7 +56,7 @@
 
     <!-- overview -->
     <div class="row">
-        <div class="col-md-12 col-lg-12 m-0 p-5">
+        <span class="col-md-12 col-lg-12 m-0 p-5">
             <h3>What can Bootstrap do for me?</h3>
             <p>Bootstrap is by far one of the most popular and well know CSS frameworks for quickly developing
                 responsive and mobile-first websites. Familiarity with the Bootstrap classes allows developers to
@@ -68,7 +68,28 @@
                 <li>Pre-built themes</li>
                 <li>Eliminate creating CSS from scratch</li>
             </ul>
-        </div>
+            <p>Bootstrap uses the class attribute html tags to apply styling just as you would do yourself by styling a
+                <a href="https://www.w3schools.com/cssref/sel_class.asp" target="_blank">CSS <em>.class</em>
+                    Selector</a>
+
+                <!-- <svg width=".5em" height=".5em" viewBox="0 0 16 16" class="bi bi-asterisk mb-2 ml-1 text-danger"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                </svg> -->
+                <span class="popup" onclick="popUp()">
+                    <svg width=".6em" height=".6em" viewBox="0 0 16 16"
+                        class="bi bi-info-circle-fill mb-2 ml-1 text-danger" type="button" data-container="body"
+                        data-toggle="popover" data-placement="top"
+                        data-content="Vivamus sagittis lacus vel augue laoreet rutrum fauci" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                    </svg>
+                    <span id="myPopup" class="popuptext">Pop Up</span></span>
+
+                .</p>
+    </div>
     </div>
     <!-- icon links -->
     <div class="row justify-content-center mt-3">
@@ -114,6 +135,7 @@
             <p>Site by Douglas Brown</p>
         </div>
     </footer>
+
 
 
 

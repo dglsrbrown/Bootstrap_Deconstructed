@@ -14,7 +14,7 @@
     <title>Bootstrap Deconstructed</title>
 </head>
 
-<body>
+<body onload="checkTab()">
     <nav>
         <ul class="nav nav-tabs">
             <li class="nav-item">
@@ -40,31 +40,62 @@
             </li>
         </ul>
     </nav>
-    <div class="container-fluid">
-        <h1>Bootstrap Deconstructed</h1>
-        <h1>GRID</h1>
-        <h3>The Bootstrap Grid System</h3>
-        <p>Bootstrap's grid system allows up to 12 columns across the page. These can all be used and supdivided to fit
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 text-center">
+                <h2> <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-grid-3x3" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5V5h4V1H1.5zM5 6H1v4h4V6zm1 4V6h4v4H6zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5v-4zm1 0h4v4H6v-4zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11h-4zm0-1h4V6h-4v4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11v4zm-1 0H6V1h4v4z" />
+                    </svg></h2>
+            </div>
+            <div class="col-md-6 col-sm-12 d-flex align-items-center m-0 p-0">
+                <h3>The Bootstrap Grid System</h3>
+            </div>
+
+        </div>
+
+
+
+        <p>Bootstrap's grid system allows up to 12 columns across the page. One single column can spand the page or 12
+            individual columns. As long as the total is 12, the division is adabtible. Aditionally all 12 units do not
+            need to be used. You could have one column of 6 on one row and two columns of various sizes totalling less
+            than 12. These can all be used or divided to fit
             your needs.</p>
-        <div class="row">
-            <div class="col-1 border border-secondary">col</div>
-            <div class="col-1 border border-secondary">col</div>
-            <div class="col-1 border border-secondary">col</div>
-            <div class="col-1 border border-secondary">col</div>
-            <div class="col-1 border border-secondary">col</div>
-            <div class="col-1 border border-secondary">col</div>
-            <div class="col-1 border border-secondary">col</div>
-            <div class="col-1 border border-secondary">col</div>
-            <div class="col-1 border border-secondary">col</div>
-            <div class="col-1 border border-secondary">col</div>
-            <div class="col-1 border border-secondary">col</div>
-            <div class="col-1 border border-secondary">col</div>
+
+        <!-- Grid examples -->
+        <div class="row bk">
+            <div class="col-12 border border-bottom-0 border-primary text-center">1 Full Width Column</div>
         </div>
-        <div class="row">
-            <div class="col-4 border border-top-0 border-secondary">col</div>
-            <div class="col-4 border-top-0 border border-secondary">col</div>
-            <div class="col-4 border-top-0 border border-secondary">col</div>
+        <div class="row bk text-center">
+            <div class="col-1 border border-primary">1</div>
+            <div class="col-1 border border-primary">2</div>
+            <div class="col-1 border border-primary">3</div>
+            <div class="col-1 border border-primary">4</div>
+            <div class="col-1 border border-primary">5</div>
+            <div class="col-1 border border-primary">6</div>
+            <div class="col-1 border border-primary">7</div>
+            <div class="col-1 border border-primary">8</div>
+            <div class="col-1 border border-primary">9</div>
+            <div class="col-1 border border-primary">10</div>
+            <div class="col-1 border border-primary">11</div>
+            <div class="col-1 border border-primary">12</div>
         </div>
+        <div class="row bk text-center">
+            <div class="col-4 border border-top-0 border-primary">1 of 3</div>
+            <div class="col-4 border-top-0 border border-primary">2 of 3</div>
+            <div class="col-4 border-top-0 border border-primary">3 of 3</div>
+        </div>
+        <div class="row  bk text-center">
+            <div class="col-6 border border-top-0 border-bottom-0 border-primary">6 wide</div>
+        </div>
+        <div class="row bk text-center">
+            <div class="col-3 border  border-primary ">3 wide</div>
+            <div class="col-5 border  border-primary">5 wide</div>
+        </div>
+
+        <!-- rows and columns -->
+
         <p class="mt-3">Bootstrap recommends putting rows and columns inside a container to ensure proper alignment. The
             two types of
             containers are <em>container</em> and <em>container fluid.</em> The first creates a fixed witdth container
@@ -81,10 +112,10 @@
         </div>
         <!-- Row with two columns - external css coloring -->
         <div class="row ">
-            <div class="col-6 col1">
+            <div class="col-6 col1 bk">
                 <p>col-6</p>
             </div>
-            <div class="col-6 col2">
+            <div class="col-6 col2 bk">
                 <p>col-6</p>
             </div>
         </div>
@@ -109,7 +140,7 @@
         </div>
 
         <!-- Second example of rows with no-gutters -->
-        <div class="row no-gutters">
+        <div class="row no-gutters bk">
             <div class="col-6 col1">
                 <p>col-6 no-gutters</p>
             </div>
@@ -118,7 +149,7 @@
             </div>
         </div>
 
-        <div class="row mt-3">
+        <div class="row mt-3 bk">
             <div class="col-12 col-sm-6 col1">
                 <h4>Column 1</h4>
             </div>
@@ -126,6 +157,10 @@
                 <h4>Column 2</h4>
             </div>
         </div>
+        <p class="mt-3">Please use your <a href="https://developers.google.com/web/tools/chrome-devtools"
+                target="_blank">developer
+                tools</a> to take a look at the code for this page if any of this seems
+            unclear.</p>
 
 
 
